@@ -3,41 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Responsive Webpage Example</title>
     <link href="/style.css" rel="stylesheet" />
-    <title>Responsive Div Example</title>
   </head>
-  <body class="flex-col">
-    <!-- Responsive Div Block -->
-    <div class="bg-blue-500 p-4 text-white mb-5">
-      <!-- Base Styles (applies to all breakpoints) -->
-      <p class="mb-2">Base Styles (applies to all breakpoints)</p>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="bg-blue-500 text-white flex items-center justify-between h-16 p-4">
+        <div class="text-center">My Enhanced Website</div>
+        <div class="flex justify-end space-x-3">
+          <a href="#" class="hidden lg:block">Home</a>
+          <a href="#" class="hidden lg:block">About</a>
+          <a href="#" class="hidden lg:block">Services</a>
+          <a href="#" class="hidden lg:block">Contact</a>
+        </div>
+      </div>
+    </nav>
+    
 
-      <!-- Small Screen (sm) Styles -->
-      <p class="sm:bg-green-500 sm:p-2 sm:text-yellow-900 mb-2">
-        Small Screen (sm) Styles
-      </p>
+    <!-- Hero Section -->
+    <section>
+      <div class="bg-slate-700 text-white flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold">Welcome to My Enhanced Website</h1>
+        <p>Discover amazing content and services. Tailwind makes it magical!</p>
+      </div>
+    </section>
+    
 
-      <!-- Medium Screen (md) Styles -->
-      <p class="md:bg-red-500 md:p-4 md:text-white mb-2">
-        Medium Screen (md) Styles
-      </p>
+    <!-- Featured Items Grid -->
+    <section>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        <div class="rounded-lg shadow-lg p-4">
+          <h2 class="text-2xl font-bold">Featured Item 1</h2>
+          <p class="text-sm text-gray-700 py-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
+            feugiat velit.
+          </p>
+          <img class="rounded-lg" src="./img/image1.jpg" alt="Featured Item 1" />
+        </div>
+        <div class="rounded-lg shadow-lg p-4">
+          <h2 class="text-2xl font-bold">Featured Item 2</h2>
+          <p class="text-sm text-gray-700 py-2">
+            Nulla facilisi. Sed euilgod mauris at justo varius, ac ultricies
+            elit posuere.
+          </p>
+          <img class="rounded-lg" src="./img/image2.jpg" alt="Featured Item 2" />
+        </div>
+        <div class="rounded-lg shadow-lg p-4">
+          <h2 class="text-2xl font-bold">Featured Item 3</h2>
+          <p class="text-sm text-gray-700 py-2">
+            Quisque euilgod elit eu felis vestibulum, vitae mattis tortor
+            sodales.
+          </p>
+          <img class="rounded-lg" src="./img/image3.jpg" alt="Featured Item 3" />
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+    </section>
 
-      <!-- Large Screen (lg) Styles -->
-      <p class="lg:bg-purple-500 lg:p-6 lg:text-yellow-300 mb-2">
-        Large Screen (lg) Styles
-      </p>
-
-      <!-- Extra Large Screen (xl) Styles -->
-      <p class="xl:bg-indigo-500 xl:p-8 xl:text-white">
-        Extra Large Screen (xl) Styles
-      </p>
-    </div>
-    <div>
-      <button
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded sm:bg-green-500 sm:hover:bg-green-700 md:bg-red-500 md:hover:bg-red-700 lg:bg-purple-500 lg:hover:bg-purple-700 xl:bg-indigo-500 xl:hover:bg-indigo-700"
-      >
-        Responsive Button
-      </button>
-    </div>
+    <!-- Contact Form -->
+    <section class="flex justify-center">
+      <div class="rounded-lg shadow-lg p-4">
+        <h2 class="text-2xl font-bold">Contact Us</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <br>
+            <input class="border-gray-300 border-2 rounded-md" type="text" id="name" name="name" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <br>
+            <input class="border-gray-300 border-2 rounded-md" type="email" id="email" name="email" />
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <br>
+            <textarea class="border-gray-300 border-2 rounded-md" id="message" name="message" rows="4"></textarea>
+          </div>
+          <button class="bg-blue-500 p-2 text-white rounded-md" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Link to Responsive Design Example -->
+    <section>
+      <div>
+        <a href="./responsive.html">Check out our Responsive Design Example</a>
+      </div>
+    </section>
   </body>
 </html>
