@@ -7,4 +7,5 @@ export default defineConfig({
       usePolling: true, // Ensures changes are detected in some environments
     },
   },
+  base: "./",
 });
